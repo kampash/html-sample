@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* استایل جدول اصلی */
+        .main-table {
+            width: 100%;
+            border: 3px solid #2c3e50;
+            border-collapse: collapse;
+        }
+
+        /* استایل جداول داخلی */
+        .nested-table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+        }
+
+        .nested-table td {
+            border: 1px solid #e74c3c;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-td {
+            padding: 0; /* حذف فاصله داخلی سلول اصلی برای فیت شدن جدول داخلی */
+        }
+    </style>
+</head>
+<body>
+
+    <table class="main-table">
+        <!-- ردیف اول: تک ستونه -->
+        <tr>
+            <td style="background-color: #ecf0f1; padding: 20px; text-align: center;">
+                سطر اول (ساده)
+            </td>
+        </tr>
+
+        <!-- ردیف دوم: حاوی یک جدول با 5 ستون -->
+        <tr>
+            <td class="main-td">
+                <table class="nested-table">
+                    <tr>
+                        <td style="background-color: #3498db; color: white;">1</td>
+                        <td style="background-color: #3498db; color: white;">2</td>
+                        <td style="background-color: #3498db; color: white;">3</td>
+                        <td style="background-color: #3498db; color: white;">4</td>
+                        <td style="background-color: #3498db; color: white;">5</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- ردیف سوم: حاوی یک جدول با 2 ستون -->
+        <tr>
+            <td class="main-td">
+                <table class="nested-table">
+                    <tr>
+                        <td style="background-color: #2ecc71; width: 50%;">بخش اول (40%)</td>
+                        <td style="background-color: #2ecc71; width: 50%;">بخش دوم (60%)</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

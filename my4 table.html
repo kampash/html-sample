@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>جدول نمرات دانش‌آموزان</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: vazir, sans-serif;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        thead {
+            background-color: #2c3e50;
+            color: white;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tfoot {
+            background-color: #ecf0f1;
+            font-weight: bold;
+        }
+        .student-name {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center; ">لیست نمرات نیم‌سال اول</h2>
+
+    <table>
+        <caption>کارنامه نهایی کلاس الف</caption>
+        
+        <thead>
+            <tr>
+                <th>نام دانش‌آموز</th>
+                <th>ریاضی</th>
+                <th>علوم</th>
+                <th>ادبیات</th>
+                <th>معدل</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="student-name">علیرضا محمدی</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>19.00</td>
+            </tr>
+            <tr>
+                <td class="student-name">سارا کریمی</td>
+                <td>20</td>
+                <td>17</td>
+                <td>18</td>
+                <td>18.33</td>
+            </tr>
+            <tr>
+                <td class="student-name">امیرحسین رضایی</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>16.00</td>
+            </tr>
+            <tr>
+                <td class="student-name">مریم قاسمی</td>
+                <td>19</td>
+                <td>18</td>
+                <td>19</td>
+                <td>18.66</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">میانگین کل کلاس:</td>
+                <td>17.99</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
