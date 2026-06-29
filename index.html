@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>استایل لینک‌ها</title>
+    <style>
+        /* استایل لینک عادی */
+        a {
+            color: blue; /* رنگ لینک */
+            text-decoration: none; /* حذف خط زیر لینک */
+            font-weight: bold; /* فونت ضخیم */
+            margin: 0 5px; /* فاصله در طرفین */
+        }
+
+        /* استایل لینک هنگام قرار گرفتن موس روی آن */
+        a:hover {
+            color: red; /* تغییر رنگ به قرمز */
+            text-decoration: underline; /* افزودن خط زیر لینک */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="#">لینک اول</a>
+        <a href="#">لینک دوم</a>
+        <a href="#">لینک سوم</a>
+    </p>
+    <p>با بردن موس روی هر کدام از لینک‌ها، رنگ و خط زیر آن‌ها تغییر می‌کند.</p>
+</body>
+</html>
+یک مثال کامل internal CSS در بخش head:
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثال جامع استایل داخلی</title>
+    <style>
+        /* استایل برای پاراگراف‌ها */
+        p {
+            color: #555; /* رنگ خاکستری تیره */
+            font-size: 17px;
+            line-height: 1.6;
+            text-align: justify; /* تراز کردن متن */
+            margin-bottom: 20px; /* فاصله از پایین */
+        }
+
+        /* استایل برای عنوان سطح اول */
+        h1 {
+            color: #0056b3; /* آبی تیره */
+            font-size: 40px;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* استایل برای لینک‌ها */
+        a {
+            color: #007bff; /* آبی استاندارد */
+            text-decoration: none;
+            font-weight: 500; /* وزن فونت متوسط */
+        }
+
+        /* استایل لینک در حالت هاور */
+        a:hover {
+            color: #003d80; /* آبی تیره‌تر */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>مقدمه‌ای بر HTML</h1>
+    <p>
+        این یک پاراگراف نمونه است که با استفاده از CSS داخلی استایل‌دهی شده است.
+        این پاراگراف برای نمایش بهتر، دارای خطوط با فاصله مناسب و تراز شده است.
+        برای آشنایی بیشتر با مباحث HTML، می‌توانید به <a href="#">صفحات مرتبط</a> مراجعه کنید.
+    </p>
+    <p>
+        موضوعات مختلفی در HTML وجود دارند که هر کدام کاربرد خاص خود را دارند.
+        یادگیری این ساختارها پایه و اساس طراحی وب است.
+    </p>
+</body>
+</html>
